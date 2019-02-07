@@ -1,0 +1,9 @@
+<div>
+  <input type="text" placeholder="Write your message here.."
+  [(ngModel)]="draftMessage.text"/>
+
+  <div>
+    <button (click)="onEnter($event)">Send</button>
+  </div>
+
+</div>
