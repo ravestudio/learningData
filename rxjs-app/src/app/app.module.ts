@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule} from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 import {MessageService} from './message/message.service'
 
@@ -14,7 +15,8 @@ import { ChatWindowComponent } from './chat-window/chat-window.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpModule
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]
